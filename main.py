@@ -1,13 +1,6 @@
-# Made with python3
-# (C) @Doctorstra
-# Copyright permission under MIT License
-# All rights reserved by Doctorstra
-# License -> https://github.com/Doctorstra/YouTube-Search-Bot/blob/main/LICENSE
-
 import os
 import ytthumb
 import requests
-from requests.utils import requote_uri
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultPhoto
 from youtubesearchpython import VideosSearch
@@ -42,9 +35,8 @@ async def text(bot, update):
 
 @Bot.on_inline_query()
 async def search(bot, update):
-    results = requests.get(
-        "https://youtube.api.fayas.me/videos/?query=" + requote_uri(update.query)
-    ).json()["result"][:50]
+    
+    results = VideosSearch(update.query, limit=50).result()
     answers = []
     
     for result in results:
