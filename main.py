@@ -22,11 +22,11 @@ Bot = Client(
 
 @Bot.on_message(filters.command(['search']))
 async def text(bot, update):
-    text = "Search youtube videos using below buttons.\n\nMade by @SLBotsOfficial"
+    text = "**Hello! 🙎\n\nI'm A simple Youtube Search Bot 💯💯.\n\nSearch 🔎 any Youtube Video  in telegram!\n\nYou must subscribe our channel in order to use me😇\n\n⭕ @Dads_links ⭕**"
     reply_markup = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="Search here", switch_inline_query_current_chat="")],
-            [InlineKeyboardButton(text="Search in another chat", switch_inline_query="")]
+            [InlineKeyboardButton(text="Search here 🔎", switch_inline_query_current_chat="")],
+            [InlineKeyboardButton(text="Search in another chat 🔎", switch_inline_query="")]
         ]
     )
     await update.reply_text(
@@ -58,7 +58,7 @@ async def search(bot, update):
         f"**Duration:** {duration_text}" + "\n" \
         f"**Views:** {views}" + "\n" \
         f"**Published Time:** {publishedtime}" + "\n" \
-        "\n" + "**Made by @TR-TECH-GUIDE**"
+        "\n" + "**Made by @Doctorstra_1**"
         thumbnail = ytthumb.thumbnail(result["id"])
         reply_markup = InlineKeyboardMarkup(
             [
