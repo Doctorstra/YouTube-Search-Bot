@@ -58,7 +58,7 @@ async def search(bot, update):
         f"**Duration:** {duration_text}" + "\n" \
         f"**Views:** {views}" + "\n" \
         f"**Published Time:** {publishedtime}" + "\n" \
-        "\n" + "**Made by @FayasNoushad**"
+        "\n" + "**Made by @Doctorstra_1**"
         thumbnail = ytthumb.thumbnail(result["id"])
         reply_markup = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="Watch Video 📹", url=result["link"])]]
