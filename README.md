@@ -10,3 +10,6 @@ A telegram youtube search bot
 - `BOT_TOKEN` Your bot token from @BotFather
 
 ---
+
+### Deploy Now:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Doctorstra/YouTube-Search-Bot)
