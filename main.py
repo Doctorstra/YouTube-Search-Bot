@@ -41,7 +41,7 @@ async def text(bot, update):
 
 @Bot.on_inline_query()
 async def search(bot, update):
-   results = requests.get(
+    results = requests.get(
         "https://youtube.api.fayas.me/videos/?query=" + requote_uri(update.query)
     ).json()["result"][:50]
     answers = []
