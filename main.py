@@ -22,7 +22,6 @@ async def text(bot, update):
             [[
             InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/Dads_links")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/Dads_links_bot"),
                                                     InlineKeyboardButton(text="SHARE ♐️", url="https://t.me/share/url?url=https://t.me/Dads_links_youtube_Search_bot")]]),
-            ],[
             [InlineKeyboardButton(text="Search here 🔎", switch_inline_query_current_chat="")],
             [InlineKeyboardButton(text="Search in another chat 🔎", switch_inline_query="")]
             ]]
