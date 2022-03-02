@@ -7,6 +7,7 @@
 import os
 import ytthumb
 import requests
+from requests.utils import requote_uri
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultPhoto
 from youtubesearchpython import VideosSearch
