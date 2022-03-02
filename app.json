@@ -1,38 +1,21 @@
 {
-    "name": "YouTube Search Bot",
-    "description": "A YouTube search bot",
-    "keywords": [
-        "YouTube",
-        "Search",
-        "Bot"
-    ],
-    "website": "https://GitHub.com/Doctorstra",
+    "name": "YouTube-Search-Bot",
     "repository": "https://github.com/Doctorstra/YouTube-Search-Bot",
-    "success_url": "https://t.me/DADS_LINKS_YouTube_Search_BOT",
+    "keywords": ["youtube ", "pyrogram", "telegram bot"],
     "env": {
+        "BOT_TOKEN": {
+            "description": "Your Bot token from @Botfather"
+        },
         "API_ID": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
+            "description": "Your API_ID from https://my.telegram.org/apps"
         },
         "API_HASH": {
-            "description": "Your API ID from my.telegram.org",
-            "value": ""
-        },
-        "BOT_TOKEN": {
-            "description": "Your Bot Token From @BotFather",
-            "value": ""
- 
+            "description": "Your API_HASH from https://my.telegram.org/apps"
         }
     },
     "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+    ]
 }
